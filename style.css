@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    height: 100vh;;
+    background-image: radial-gradient(circle, #f7f915, #e4f517, #d1f21c, #bded22, #aae929, #9cdc29, #8fce29, #82c128, #77a922, #6a911d, #5e7b19, #506516);
+    background-size: cover; 
+    background-position: center; 
+
+}
+
+body p ,h4{
+
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+body p{
+    font-size: 12px;
+   
+}
+
+.navbar {
+    color: white;
+    padding: 15px 20px; /* Adjusted padding for better alignment */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between the title and the social links */
+    align-items: center; /* Center vertically */
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+.navbar:hover{
+  
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.navbar h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 24px; 
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
+.worktxt{
+    font-size: 25px;
+}
+.image-box {
+    
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4); /* Apply opacity only to the background */
+    height: 450px;
+    border-radius: 20px;
+    width: 250px;
+   
+    margin: auto;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.image-box:hover{
+    transform: scale(1.1);
+} 
+
+.image-box p , h2{
+    font-family: "Quicksand", sans-serif;
+}
+
+.image-box-src {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.image-box-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 20px;
+    padding: 20px;
+    
+    transition: all 0.3s ease; 
+}
+.image-box-a:hover{
+    transform: scale(1.1);
+}
+
+.image-box-src-a {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+.social{
+    
+    display: flex;
+    margin: 20px;
+    align-self: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+
+.logo{
+    height: 40px;
+    width: 40px;
+}
+
+.btn-img{
+    
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.social-link {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.social-link:hover {
+    transform: scale(1.1); /* Scales the element up by 10% */
+}
+
+.white-part{
+
+   background-color: #fff;
+  
+    margin-top: 100px;
+    padding: 20px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.social-link2{
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    align-self: center;
+    transition: all 0.3s ease; 
+ 
+       
+      
+}
+
+.works{
+    display: block;
+}
+.social-link2-main{
+    display: flex;
+    float: right;
+    margin: 0;
+}
+.social-link2:hover {
+    transform: scale(1.1); /* Scales the element up by 10% */
+}
+
+.footer-a,.footer-a-2{
+    font-family: "Quicksand", sans-serif;
+  
+
+}
+
+@media (max-width: 1906px){
+   
+    .navbar{
+        
+        display: flex;
+    }
+    .navbar h1{
+        float: left;
+        margin: 10px;
+    }
+    .social-link{
+        display: none;
+
+    }
+
+   
+    .social-link2-main{
+        display: flex;
+     
+        float: right;
+    }
+    .works{
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap into multiple rows */
+        justify-content: space-between; /* Distributes space evenly between items */
+        margin: 20px;
+    }
+    .image-box-a {
+        flex: 0 1 calc(33.33% - 20px); /* Each item takes up roughly 1/3rd of the width, minus margin */
+        box-sizing: border-box;
+        margin: 10px;
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+
+        
+        transition: all 0.3s ease; 
+    }
+    .image-box{
+        height: 450px;
+    }
+    .footer-a{
+        display: none;
+        
+    }
+    .footer-a-2{
+        display: block;
+        background-color: #fff;
+        margin: 0;
+    }
+}
+/* Responsive design for mobile phones */
+@media (max-width: 947px) {
+    .social-link{
+        display: block;
+    }
+    .social-link2{
+        display: none;
+    }
+    .navbar{
+        
+        display: block;
+  
+    }
+    .navbar h1{
+        float: none;
+        padding: 10px;
+        
+    }
+    .social-link2-main{
+        display: none;
+    }
+    .works{
+        display: block;
+        
+    }
+    .image-box{
+        height: 500px;
+    }
+    .footer-a{
+        display: block;
+    }
+    .footer-a-2{
+        display: none;
+    }
+}
