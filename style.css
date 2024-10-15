@@ -86,7 +86,7 @@ body p{
     align-items: center;
     height: 50vh;
     margin: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     
     transition: all 0.3s ease; 
 }
@@ -138,8 +138,8 @@ body p{
 
 .white-part{
 
-   background-color: #fff;
-  
+   /* background-color: #fff; */
+   /* background-color: rgba(255, 255, 255, 0.4); */
     margin-top: 100px;
     padding: 20px;
 
@@ -207,7 +207,7 @@ body p{
         flex: 0 1 calc(33.33% - 20px); /* Each item takes up roughly 1/3rd of the width, minus margin */
         box-sizing: border-box;
         margin: 10px;
-        background-color: #fff;
+        /* background-color: #fff; */
         padding: 20px;
         text-align: center;
         border-radius: 10px;
@@ -220,6 +220,7 @@ body p{
     }
     .footer-a{
         display: none;
+       
         
     }
     .footer-a-2{
@@ -253,11 +254,17 @@ body p{
         display: block;
         
     }
+    .image-box-a{
+        height: 260px;
+    }
     .image-box{
         height: 500px;
+     
     }
     .footer-a{
+        margin-bottom: 50px;
         display: block;
+        
     }
     .footer-a-2{
         display: none;
